@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Add Pet</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="owners.html">Owners</a></li>
+                <li><a href="adoption_requests.html">Adoption Requests</a></li>
+                <li><a href="updates.html">Updates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-pet-form">
+            <h2>Add a New Pet</h2>
+            <form action="add_pet.php" method="post" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="breed">Breed:</label>
+                <input type="text" id="breed" name="breed" required><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br>
+
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*"><br>
+
+                <!-- Add input fields for other attributes -->
+
+                <button type="submit">Add Pet</button>
+            </form>
+        </section>
+    </main>
+
+   
+</body>
+</html>
